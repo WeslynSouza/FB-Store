@@ -27,7 +27,7 @@ export default props => {
                 </div>
             </main>
 
-            <Rodape/>
+            <Rodape color='var(--color-rodape-principal)'/>
         </div>
     )
 }

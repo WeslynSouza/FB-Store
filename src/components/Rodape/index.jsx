@@ -4,7 +4,7 @@ import './styles.css';
 
 export default props => {
     return (
-        <footer>
+        <footer style={{backgroundColor: props.color}}>
             <h1>fantastic baby store</h1>
 
             <p>A Fantastic Baby Store é uma loja de moda com foco em artigos de K-Pop, Geek e cultura pop no geral.</p>

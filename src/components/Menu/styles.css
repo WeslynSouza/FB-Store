@@ -29,3 +29,22 @@ header nav ul li h2 {
     text-transform: uppercase;
 }
 
+@media (min-width: 700px ){
+    header nav {
+        height: 6rem;
+    }
+
+    header nav ul {
+        max-width: 700px;
+        margin: 0 auto;
+    }
+
+    header nav ul li img{
+        width: 5.8rem;
+    }
+
+    header nav ul li h2 {
+        font-size: 2.6rem;
+    }
+}
+
