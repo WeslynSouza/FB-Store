@@ -1,17 +1,16 @@
-.mxStore {
-    background: var(--color-bg-mx1);
+.btsStore {
+    background: var(--color-bg-bts);
     min-height: 76vh;
-    max-width: 100vw;
 }
 
-.mxStore .products-container {
+.btsStore .products-container {
     display: flex;
     flex-wrap: wrap;
 }
 
 @media ( min-width: 700px ){
 
-    .mxStore .products-container {
+    .btsStore .products-container {
         max-width: 900px;
         margin: 0 auto;
     }

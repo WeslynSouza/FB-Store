@@ -9,6 +9,10 @@
     --color-fontrosa-mx1: #FF4CC4;
     --color-caixa-mx1: #1E0250;
     --color-rodape-mx1: #2C0475;
+    --color-menu-bts: #C8444B;
+    --color-rodape-bts: #7A272C;
+    --color-caixa-bts: #290D0F;
+    --color-bg-bts: #000;
 }
 
 * {
@@ -36,13 +40,14 @@ textarea {
     color: var(--color-fonte-normal);
 }
 
-.container {
-    width: 90vw;
-    max-width: 700px;
+.container{
+    width: 100%;
+    max-width: 900px;
 }
 
 @media( min-width: 700px ) {
     :root {
         font-size: 62.5%;
     }
+        
 }

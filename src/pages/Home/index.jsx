@@ -16,7 +16,7 @@ export default props => {
 
             <main>
                 <div className='banner-container'>
-                    <Link to='/'>
+                    <Link to='/BtsStore'>
                         <img src={btsBanner} alt="Coleção BTS" className='homeBanner'/>
                     </Link>
                 </div>
