@@ -13,7 +13,6 @@ header nav ul {
 header nav ul li {
     flex-direction: row;
     list-style: none;
-    
 }
 
 header nav ul li img {
@@ -25,6 +24,12 @@ header nav ul li a {
     text-decoration: none;
 }
 
+header nav ul li button {
+    border: 0;
+    background: transparent;
+}
+
+
 header nav ul li a h2 {
     color: var(--color-fonte-normal);
     font-weight: 700;
@@ -32,6 +37,41 @@ header nav ul li a h2 {
     font-size: 1.6rem;
     font-family: Montserrat;
     text-transform: uppercase;
+}
+
+header .sidenav{
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    background: #333;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 6.5rem;
+}
+
+header .sidenav a {
+    padding: 1.5rem 0;
+    text-decoration: none;
+    font-size: 2.1rem;
+    font-family: Montserrat;
+    color: var(--color-fonte-normal);
+    display: block;
+    border-bottom: 0.2rem solid #fff;
+    margin: 0 1rem;
+}
+
+header .sidenav .closebtn {
+    position: absolute;
+    top: 0.5rem;
+    right: 2.5rem;
+    font-size: 3.6rem;
+    margin-left: 5.0rem;
+    font-family: Montserrat;
+    border: 0;
+    background: transparent;
 }
 
 @media (min-width: 700px ){
