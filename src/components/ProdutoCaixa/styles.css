@@ -37,9 +37,22 @@
     font-size: 1.4rem;
     text-transform: uppercase;
     font-weight: 700;
+    cursor: pointer;
 }
 
 .box:nth-child(2n+1):last-child{
     width: 80vw;
     margin: 1.5rem 10vw;
+}
+
+@media( min-width: 700px ){
+    .box {
+        width: 23%;
+        margin: 2rem 1%;
+    }
+
+    .box:nth-child(2n+1):last-child{
+        width: 23%;
+        margin: 2rem 1%;
+    }
 }

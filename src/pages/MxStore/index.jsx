@@ -12,40 +12,42 @@ export default props => {
         <div>
             <Menu color='var(--color-menu-mx1)'/>
             <main className='mxStore'>
-                <ProdutoCaixa 
-                    img={mxWalker}
-                    alt='Camisa Monsta X'
-                    title='Walker'
-                    value='R$ 69,99'
-                />
+                <div className='products-container'>
+                    <ProdutoCaixa 
+                        img={mxWalker}
+                        alt='Camisa Monsta X'
+                        title='Walker'
+                        value='R$ 69,99'
+                    />
 
-                <ProdutoCaixa 
-                    img={mxWalker}
-                    alt='Camisa Monsta X'
-                    title='Walker'
-                    value='R$ 69,99'
-                />
+                    <ProdutoCaixa 
+                        img={mxWalker}
+                        alt='Camisa Monsta X'
+                        title='Walker'
+                        value='R$ 69,99'
+                    />
 
-                <ProdutoCaixa 
-                    img={mxWalker}
-                    alt='Camisa Monsta X'
-                    title='Walker'
-                    value='R$ 69,99'
-                />
+                    <ProdutoCaixa 
+                        img={mxWalker}
+                        alt='Camisa Monsta X'
+                        title='Walker'
+                        value='R$ 69,99'
+                    />
 
-                <ProdutoCaixa 
-                    img={mxWalker}
-                    alt='Camisa Monsta X'
-                    title='Walker'
-                    value='R$ 69,99'
-                />
+                    <ProdutoCaixa 
+                        img={mxWalker}
+                        alt='Camisa Monsta X'
+                        title='Walker'
+                        value='R$ 69,99'
+                    />
 
-                <ProdutoCaixa 
-                    img={mxWalker}
-                    alt='Camisa Monsta X'
-                    title='Walker'
-                    value='R$ 69,99'
-                />
+                    <ProdutoCaixa 
+                        img={mxWalker}
+                        alt='Camisa Monsta X'
+                        title='Walker'
+                        value='R$ 69,99'
+                    />
+                </div>
 
             </main>
             <Rodape color='var(--color-rodape-mx1)'/>
