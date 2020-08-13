@@ -1,6 +1,7 @@
 import React from 'react';
 import Menu from '../../components/Menu';
 import Rodape from '../../components/Rodape';
+import { Link } from 'react-router-dom';
 
 import btsBanner from '../../assets/img/Slide-MOTS7.png';
 import mxBanner from '../../assets/img/Slide-MX.png';
@@ -15,15 +16,21 @@ export default props => {
 
             <main>
                 <div className='banner-container'>
-                    <img src={btsBanner} alt="Coleção BTS"/>
+                    <Link to='/'>
+                        <img src={btsBanner} alt="Coleção BTS" className='homeBanner'/>
+                    </Link>
                 </div>
 
                 <div className='banner-container'>
-                    <img src={mxBanner} alt="Coleção BTS"/>
+                    <Link to='/MxStore'>
+                        <img src={mxBanner} alt="Coleção Monsta X" className='homeBanner'/>
+                    </Link>
                 </div>
                 
                 <div className='banner-container'>
-                    <img src={bpBanner} alt="Coleção BTS"/>
+                    <Link to='/'>
+                        <img src={bpBanner} alt="Coleção Black Pink" className='homeBanner'/>
+                    </Link>
                 </div>
             </main>
 

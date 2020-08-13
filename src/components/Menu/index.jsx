@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 import menuIcon from '../../assets/img/Menu.png';
 import cartIcon from '../../assets/img/Cart.png';
@@ -11,11 +12,11 @@ export default props => {
             <nav style={{backgroundColor: props.color}}>
                 <ul>
                     <li>
-                        <a href='/'><img src={menuIcon} alt="Icone de menu"/></a>
+                        <img src={menuIcon} alt="Icone de menu"/>
                     </li>
 
                     <li>
-                        <h2>fantastic baby store</h2>
+                        <Link to='/'><h2>fantastic baby store</h2></Link>
                     </li>
 
                     <li>

@@ -1,0 +1,5 @@
+.mxStore {
+    background: var(--color-bg-mx1);
+    display: flex;
+    flex-wrap: wrap;
+}

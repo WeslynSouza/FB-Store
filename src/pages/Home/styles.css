@@ -4,13 +4,13 @@ main .banner-container {
     justify-content: center;
 }
 
-main .banner-container img {
-    width: 100%;
+main .banner-container a img {
+    width: 100vw;
     margin: 0;
 }
 
 @media ( min-width: 700px ){
-    main .banner-container img{
+    main .banner-container a img{
         max-width: 900px;
     }
 }
