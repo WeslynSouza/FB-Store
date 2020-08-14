@@ -40,10 +40,12 @@ export default props => {
 
             <div className='sidenav' id='sidenav' style={{background: props.color}}>
                 <button onClick={closeNav} className='closebtn'>X</button>
-                <Link to='/'>Inicio</Link>
+                <Link to='/'>Início</Link>
                 <Link to='#'>Carrinho</Link>
+                <Link to='/SobreNos'>Sobre nós</Link>
                 <Link to='/btsStore'>Map Of The Soul: 7</Link>
                 <Link to='/mxStore'>Yeah! We Rock the Show</Link>
+                <Link to='/bpStore'>How You Like That</Link>
             </div>
 
         </header>

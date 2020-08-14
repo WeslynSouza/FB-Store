@@ -1,0 +1,74 @@
+.sobre-nos {
+    font-family: Montserrat;
+}
+
+.sobre-nos h1 {
+    font-weight: 700;
+    font-style: italic;
+    font-size: 2.4rem;
+    color: var(--color-menu-principal);
+    text-align: center;
+    margin-top: 3.5rem;
+}
+
+.sobre-nos h2 {
+    color: var(--color-fonte-secundaria);
+    text-align: center;
+    margin: 1.2rem auto 0;
+    font-size: 1.8rem;
+    width: 60%;
+    font-weight: 200;
+
+}
+
+.sobre-nos .perfils-container .perfil-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3rem;
+}
+
+.sobre-nos .perfils-container .perfil-container img {
+    width: 60%;
+    left: 20%;
+    border-radius: 50%;
+}
+
+.sobre-nos .perfils-container .perfil-container h3 {
+    color: var(--color-menu-principal);
+    font-size: 2.4rem;
+    font-style: italic;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+@media( min-width: 700px ){
+    .sobre-nos {
+        width: 900px;
+        margin: 0 auto;
+    }
+
+    .sobre-nos h1 {
+        margin-top: 7.5rem;
+        font-size: 3.4rem;
+    }
+
+    .sobre-nos h2 {
+        margin-top: 2.5rem;
+        font-size: 2.8rem;
+    }
+
+    .sobre-nos .perfils-container {
+        display: flex;
+        flex-direction: row;
+        margin-top: 10%;
+        margin-bottom: 17.6vh;
+    }
+
+    .sobre-nos .perfils-container .perfil-container img {
+        width: 80%;
+        left: 10%;
+    }
+
+}

@@ -3,6 +3,7 @@ footer {
     flex-direction: column;
     align-items: center;
     font-family: Montserrat;
+    position: relative;
 }
 
 footer h1 {

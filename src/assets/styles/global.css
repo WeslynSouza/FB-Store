@@ -4,6 +4,7 @@
     --color-menu-principal: #AB1A21;
     --color-rodape-principal: #671010;
     --color-fonte-normal: #FFFFFF;
+    --color-fonte-secundaria: #666666;
     --color-menu-mx1: #4006A9;
     --color-bg-mx1: #390EA4;
     --color-fontrosa-mx1: #FF4CC4;
@@ -12,7 +13,10 @@
     --color-menu-bts: #C8444B;
     --color-rodape-bts: #7A272C;
     --color-caixa-bts: #290D0F;
-    --color-bg-bts: #000;
+    --color-bg-preto: #000;
+    --color-menu-bp: #151515;
+    --color-caixa-bp: #361B28;
+    --color-fonte-bp: #FF90C4;
 }
 
 * {
@@ -26,7 +30,7 @@ html, body, #root {
 }
 
 body {
-    background: #000;
+    background: #f6f7f9;
 }
 
 #root {
@@ -49,5 +53,5 @@ textarea {
     :root {
         font-size: 62.5%;
     }
-        
+
 }

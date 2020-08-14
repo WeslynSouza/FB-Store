@@ -28,7 +28,7 @@ export default props => {
                 </div>
                 
                 <div className='banner-container'>
-                    <Link to='/'>
+                    <Link to='/bpStore'>
                         <img src={bpBanner} alt="Coleção Black Pink" className='homeBanner'/>
                     </Link>
                 </div>
