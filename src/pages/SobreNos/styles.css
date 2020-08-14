@@ -47,6 +47,7 @@
     .sobre-nos {
         width: 900px;
         margin: 0 auto;
+        min-height: 68.5vh;
     }
 
     .sobre-nos h1 {
@@ -63,7 +64,6 @@
         display: flex;
         flex-direction: row;
         margin-top: 10%;
-        margin-bottom: 16.4vh;
     }
 
     .sobre-nos .perfils-container .perfil-container img {
