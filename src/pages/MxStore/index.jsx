@@ -21,7 +21,7 @@ export default props => {
                                 title={camisa.titulo}
                                 value={`R$ ${camisa.preço}`}
                                 bg='var(--color-caixa-mx1)'
-                                color='var(--color-menu-mx1)'
+                                color='var(--color-fonte-mx1)'
                             />
                         )
                     })}
