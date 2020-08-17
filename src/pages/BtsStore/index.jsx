@@ -2,8 +2,7 @@ import React from 'react';
 import Menu from '../../components/Menu';
 import Rodape from '../../components/Rodape';
 import ProdutoCaixa from '../../components/ProdutoCaixa';
-
-import btsJungkook from '../../assets/img/btsJungkook.jpg';
+import dadosIniciais from '../../data/dados_iniciais.json';
 
 import './styles.css';
 
@@ -12,53 +11,21 @@ export default props => {
         <div>
             <Menu color='var(--color-menu-bts)'/>
             <div className='btsStore'>
-                <div className='products-container'>
-                    <ProdutoCaixa 
-                        img={btsJungkook}
-                        alt='Camisa Monsta bts'
-                        title='Jungkook'
-                        value='R$ 69,99'
-                        bg='var(--color-caixa-bts)'
-                        color='var(--color-menu-bts)'
-                    />
-
-                    <ProdutoCaixa 
-                        img={btsJungkook}
-                        alt='Camisa Monsta bts'
-                        title='Jungkook'
-                        value='R$ 69,99'
-                        bg='var(--color-caixa-bts)'
-                        color='var(--color-menu-bts)'
-                    />
-
-                    <ProdutoCaixa 
-                        img={btsJungkook}
-                        alt='Camisa Monsta bts'
-                        title='Jungkook'
-                        value='R$ 69,99'
-                        bg='var(--color-caixa-bts)'
-                        color='var(--color-menu-bts)'
-                    />
-
-                    <ProdutoCaixa 
-                        img={btsJungkook}
-                        alt='Camisa Monsta bts'
-                        title='Jungkook'
-                        value='R$ 69,99'
-                        bg='var(--color-caixa-bts)'
-                        color='var(--color-menu-bts)'
-                    />
-
-                    <ProdutoCaixa 
-                        img={btsJungkook}
-                        alt='Camisa Monsta bts'
-                        title='Jungkook'
-                        value='R$ 69,99'
-                        bg='var(--color-caixa-bts)'
-                        color='var(--color-menu-bts)'
-                    />
+                <div className='products-container' >
+                    {dadosIniciais.coleções[0].camisas.map( camisa => {
+                        return (
+                            <ProdutoCaixa 
+                                key={camisa.titulo}
+                                img={camisa.imagem}
+                                alt='Camisa bts'
+                                title={camisa.titulo}
+                                value={`R$ ${camisa.preço}`}
+                                bg='var(--color-caixa-bts)'
+                                color='var(--color-menu-bts)'
+                            />
+                        )
+                    })}
                 </div>
-
             </div>
             <Rodape color='var(--color-rodape-bts)'/>
         </div>

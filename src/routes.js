@@ -5,13 +5,13 @@ import Home from './pages/Home';
 import MxStore from './pages/MxStore';
 import BtsStore from './pages/BtsStore';
 import BpStore from './pages/BpStore';
-import QuemSomos from './pages/SobreNos';
+import AboutUs from './pages/AboutUs';
 
 export default () => {
     return (
         <BrowserRouter>
             <Route path='/' exact component={Home}/>
-            <Route path='/SobreNos' component={QuemSomos}/>
+            <Route path='/SobreNos' component={AboutUs}/>
             <Route path='/MxStore' component={MxStore}/>
             <Route path='/BtsStore' component={BtsStore}/>
             <Route path='/BpStore' component={BpStore}/>

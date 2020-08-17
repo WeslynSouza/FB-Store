@@ -2,8 +2,7 @@ import React from 'react';
 import Menu from '../../components/Menu';
 import Rodape from '../../components/Rodape';
 import ProdutoCaixa from '../../components/ProdutoCaixa';
-
-import mxWalker from '../../assets/img/mxWalker.jpg';
+import dadosIniciais from '../../data/dados_iniciais.json';
 
 import './styles.css';
 
@@ -13,50 +12,19 @@ export default props => {
             <Menu color='var(--color-menu-mx1)'/>
             <div className='mxStore'>
                 <div className='products-container'>
-                    <ProdutoCaixa 
-                        img={mxWalker}
-                        alt='Camisa Monsta X'
-                        title='Walker'
-                        value='R$ 69,99'
-                        bg='var(--color-caixa-mx1)'
-                        color='var(--color-fontrosa-mx1)'
-                    />
-
-                    <ProdutoCaixa 
-                        img={mxWalker}
-                        alt='Camisa Monsta X'
-                        title='Walker'
-                        value='R$ 69,99'
-                        bg='var(--color-caixa-mx1)'
-                        color='var(--color-fontrosa-mx1)'
-                    />
-
-                    <ProdutoCaixa 
-                        img={mxWalker}
-                        alt='Camisa Monsta X'
-                        title='Walker'
-                        value='R$ 69,99'
-                        bg='var(--color-caixa-mx1)'
-                        color='var(--color-fontrosa-mx1)'
-                    />
-
-                    <ProdutoCaixa 
-                        img={mxWalker}
-                        alt='Camisa Monsta X'
-                        title='Walker'
-                        value='R$ 69,99'
-                        bg='var(--color-caixa-mx1)'
-                        color='var(--color-fontrosa-mx1)'
-                    />
-
-                    <ProdutoCaixa 
-                        img={mxWalker}
-                        alt='Camisa Monsta X'
-                        title='Walker'
-                        value='R$ 69,99'
-                        bg='var(--color-caixa-mx1)'
-                        color='var(--color-fontrosa-mx1)'
-                    />
+                    {dadosIniciais.coleções[1].camisas.map( camisa => {
+                        return (
+                            <ProdutoCaixa 
+                                key={camisa.titulo}
+                                img={camisa.imagem}
+                                alt='Camisa Monsta X'
+                                title={camisa.titulo}
+                                value={`R$ ${camisa.preço}`}
+                                bg='var(--color-caixa-mx1)'
+                                color='var(--color-menu-mx1)'
+                            />
+                        )
+                    })}
                 </div>
 
             </div>
