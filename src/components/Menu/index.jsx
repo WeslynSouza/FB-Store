@@ -33,7 +33,7 @@ export default props => {
 
     return (
         <header>
-            <div className='nav'>
+            <div className='nav' style={{backgroundColor: props.color}}>
                 <nav className='navbar' id="nav" style={{backgroundColor: props.color}}>
                     <ul className='menu'>
                         <li className='menu-item'>
