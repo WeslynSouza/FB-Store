@@ -4,13 +4,13 @@
     flex-direction: column;
     padding: .7rem;
     box-sizing: border-box;
-    margin-top: 1rem;
+    margin-bottom: 1.5rem;
     border-radius: 1rem;
     background: var(--color-menu-bp);
 }
 
-.colecao-container:last-child {
-    margin-bottom: 1rem;
+.colecao-container:first-child {
+    margin-top: 1rem;
 }
 
 .colecao-container a img {
@@ -51,6 +51,10 @@
 @media ( min-width: 700px ) {
     .colecao-container {
         max-width: 900px;
+    }
+
+    .colecao-container:first-child {
+        margin-top: 3rem;
     }
 
     .colecao-container a img {

@@ -2,7 +2,6 @@ import React from 'react';
 import Menu from '../../components/Menu';
 import Rodape from '../../components/Rodape';
 import ColeçãoContainer from '../../components/ColecaoContainer';
-import { Link } from 'react-router-dom';
 
 import btsBanner from '../../assets/img/Slide-MOTS7.png';
 import mxBanner from '../../assets/img/Slide-MX.png';
