@@ -1,6 +1,7 @@
 import React from 'react';
 import Menu from '../../components/Menu';
 import Rodape from '../../components/Rodape';
+import ColeçãoContainer from '../../components/ColecaoContainer';
 import { Link } from 'react-router-dom';
 
 import btsBanner from '../../assets/img/Slide-MOTS7.png';
@@ -16,21 +17,29 @@ export default props => {
 
             <main>
                 <div className='banner-container'>
-                    <Link to='/BtsStore'>
-                        <img src={btsBanner} alt="Coleção BTS" className='homeBanner'/>
-                    </Link>
-                </div>
+                    <ColeçãoContainer 
+                        img={btsBanner}
+                        alt="Coleção bts"
+                        titulo="BTS Map Of The Soul 7"
+                        href="/BtsStore"
+                        color='var(--color-menu-principal)'                    
+                    />
 
-                <div className='banner-container'>
-                    <Link to='/MxStore'>
-                        <img src={mxBanner} alt="Coleção Monsta X" className='homeBanner'/>
-                    </Link>
-                </div>
-                
-                <div className='banner-container'>
-                    <Link to='/bpStore'>
-                        <img src={bpBanner} alt="Coleção Black Pink" className='homeBanner'/>
-                    </Link>
+                    <ColeçãoContainer 
+                        img={mxBanner}
+                        alt="Coleção Monsta X"
+                        titulo="Monsta X Yeah! We Rock The Show"
+                        href="/MxStore"
+                        color='var(--color-rodape-mx1)'                    
+                    />
+
+                    <ColeçãoContainer 
+                        img={bpBanner}
+                        alt="Coleção BlackPink"
+                        titulo="BlackPink How You Like That"
+                        href="/BpStore"
+                        color='var(--color-fonte-bp)'                    
+                    />
                 </div>
             </main>
 
