@@ -11,9 +11,9 @@ A Fantastic Baby Store é uma loja de moda com foco em artigos de K-Pop, Geek e 
 
 Este projeto foi desenvolvido com as seguintes tecnologias:
 
-- Node.js
-- React
-- Redux
+- [Node.js](https://nodejs.org/en/)
+- [React](https://reactjs.org)
+- [Redux](https://redux.js.org)
 
 ## Installation
 
