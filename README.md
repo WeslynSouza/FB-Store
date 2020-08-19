@@ -26,7 +26,7 @@ Este projeto foi desenvolvido com as seguintes tecnologias:
 
 Para acessar o layout utilize a ferramenta [figma](https://www.figma.com/file/N8HMunaoAybcg2b8Sqxi90/Untitled)
 
-## Installation
+## 📌 Installation
 
 TODO: Describe the installation process
 
@@ -37,6 +37,6 @@ TODO: Describe the installation process
 - Faça commit das suas alterações: `git commit -m 'feat: Minha nova feature'`;
 - Faça push para a sua branch: `git push origin minha-feature`.
 
-## License
+## 📝 License
 
-TODO: Write license
+Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE]() para mais detalhes.
