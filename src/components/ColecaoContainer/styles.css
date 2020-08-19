@@ -46,7 +46,10 @@
     border-bottom-right-radius: .6rem;
     align-items: center;
     justify-content: center;
+    transition: .5s;
+    opacity: 1;
 }
+
 
 @media ( min-width: 700px ) {
     .colecao-container {
@@ -69,5 +72,10 @@
     .colecao-container .colecao-container-detalhes a {
         width: 30%;
         font-size: 2rem;
+        opacity: .9;
     }
+
+    .colecao-container .colecao-container-detalhes a:hover {
+        opacity: 1;
+    }  
 }

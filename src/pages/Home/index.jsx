@@ -2,6 +2,7 @@ import React from 'react';
 import Menu from '../../components/Menu';
 import Rodape from '../../components/Rodape';
 import ColeçãoContainer from '../../components/ColecaoContainer';
+import { FiChevronLeft, FiChevronRight } from 'react-icons/fi';
 
 import btsBanner from '../../assets/img/Slide-MOTS7.png';
 import mxBanner from '../../assets/img/Slide-MX.png';
@@ -13,8 +14,26 @@ export default props => {
     return (
         <div>
             <Menu color='var(--color-menu-principal)'/>
-
             <main>
+
+                <div className='carousel'>
+                    <button className='carousel-prev'><FiChevronLeft/></button>
+                    <button className='carousel-next'><FiChevronRight/></button>
+
+                    <div className='carousel-item '>
+                        <img src={btsBanner} alt="Slide 1"/>
+                    </div>
+
+                    <div className='carousel-item active'>
+                        <img src={mxBanner} alt="Slide 2"/>
+                    </div>
+
+                    <div className='carousel-item'>
+                        <img src={bpBanner} alt="Slide 3"/>
+                    </div>
+
+                </div>
+
                 <div className='banner-container'>
                     <ColeçãoContainer 
                         img={btsBanner}
@@ -41,7 +60,6 @@ export default props => {
                     />
                 </div>
             </main>
-
             <Rodape color='var(--color-rodape-principal)'/>
         </div>
     )
