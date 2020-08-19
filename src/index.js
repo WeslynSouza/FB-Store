@@ -1,15 +1,20 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import Favicon from 'react-favicon';
+import { Provider } from 'react-redux';
+import { createStore } from 'redux';
+import reducers from './reducers';
 import App from './App';
 
 import icon from './assets/img/favicon.ico';
 
+const store = createStore(reducers);
+
 ReactDOM.render(
-  <React.StrictMode>
+  <Provider store={store}>
     <Favicon url={icon}/>
     <App />
-  </React.StrictMode>,
+  </Provider>,
   document.getElementById('root')
 );
 
