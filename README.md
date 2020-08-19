@@ -28,7 +28,13 @@ Para acessar o layout utilize a ferramenta [figma](https://www.figma.com/file/N8
 
 ## 📌 Installation
 
-TODO: Describe the installation process
+```sh
+git clone https://github.com/GabrielBarcelos1/BeTheHero.git
+cd BeTheHero
+npm install
+cd backend
+npm start
+```
 
 ## 🤔 Como contribuir
 
