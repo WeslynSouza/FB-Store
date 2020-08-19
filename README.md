@@ -29,10 +29,9 @@ Para acessar o layout utilize a ferramenta [figma](https://www.figma.com/file/N8
 ## 📌 Installation
 
 ```sh
-git clone https://github.com/GabrielBarcelos1/BeTheHero.git
-cd BeTheHero
+git clone hhttps://github.com/WeslynSouza/FB-Store
+cd fbs-store
 npm install
-cd backend
 npm start
 ```
 
