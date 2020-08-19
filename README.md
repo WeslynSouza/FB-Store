@@ -1,8 +1,19 @@
-# Fantastic Baby Store
+<h1 align='center'>
+  Fantastic Baby Store
+</h1>
 
-## Projeto
+
+## 💻 Projeto
 
 A Fantastic Baby Store é uma loja de moda com foco em artigos de K-Pop, Geek e cultura pop no geral.
+
+## 🚀 Tecnologias
+
+Este projeto foi desenvolvido com as seguintes tecnologias:
+
+- Node.js
+- React
+- Redux
 
 ## Installation
 
