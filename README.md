@@ -6,6 +6,7 @@
   <a href="#-projeto">Projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#rocket-tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#-layout">Layout</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-como-executar">Como executar</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#-como-contribuir">Como contribuir</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#memo-licença">Licença</a>
 </p>
@@ -26,7 +27,7 @@ Este projeto foi desenvolvido com as seguintes tecnologias:
 
 Para acessar o layout utilize a ferramenta [figma](https://www.figma.com/file/N8HMunaoAybcg2b8Sqxi90/Untitled)
 
-## 📌 Installation
+## 📌 Como executar
 
 ```sh
 git clone hhttps://github.com/WeslynSouza/FB-Store
