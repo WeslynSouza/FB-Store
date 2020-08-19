@@ -1,12 +1,8 @@
 .colecao-container {
-    width: 98vw;
+    width: 100vw;
     display: flex;
     flex-direction: column;
-    padding: .7rem;
-    box-sizing: border-box;
-    margin-bottom: 1.5rem;
-    border-radius: 1rem;
-    background: var(--color-menu-bp);
+    background: #fff;
 }
 
 .colecao-container:first-child {
@@ -15,8 +11,6 @@
 
 .colecao-container a img {
     width: 100%;
-    border-top-right-radius: .5rem;
-    border-top-left-radius: .5rem;
 }
 
 .colecao-container .colecao-container-detalhes {
@@ -24,15 +18,17 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    height: 5rem;
-    margin-top: .5rem;
+    margin-top: -.2rem;
+    height: 4rem;
     font-family: Montserrat;
 }
 
 .colecao-container .colecao-container-detalhes h1 {
-    color: var(--color-fonte-normal);
-    font-size: 1.2rem;
-    margin-left: .5rem;
+    color: var(--color-bg-preto);
+    font-size: 1.1rem;
+    text-align: center;
+    width: 63%;
+    text-transform: uppercase;
 }
 
 .colecao-container .colecao-container-detalhes a {
@@ -43,11 +39,10 @@
     font-weight: 700;
     font-size: 1.4rem;
     display: flex;
-    border-bottom-right-radius: .6rem;
     align-items: center;
     justify-content: center;
     transition: .5s;
-    opacity: 1;
+    background: var(--color-menu-principal);
 }
 
 
@@ -64,6 +59,10 @@
         width: 100%;
     }
 
+    .colecao-container .colecao-container-detalhes {
+        height: 5rem;
+    }
+
     .colecao-container .colecao-container-detalhes h1 {
         font-size: 2.5rem;
         margin-left: 2rem;
@@ -72,7 +71,6 @@
     .colecao-container .colecao-container-detalhes a {
         width: 30%;
         font-size: 2rem;
-        opacity: .9;
     }
 
     .colecao-container .colecao-container-detalhes a:hover {

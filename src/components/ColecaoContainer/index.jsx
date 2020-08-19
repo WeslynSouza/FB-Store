@@ -11,7 +11,7 @@ export default props => {
             </Link>
             <div className='colecao-container-detalhes'>
                 <h1>{props.titulo}</h1>
-                <Link to={props.href} style={{backgroundColor: props.color}}>
+                <Link to={props.href}>
                     Conferir coleção
                 </Link>
             </div>
