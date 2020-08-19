@@ -1,5 +1,7 @@
 # Fantastic Baby Store
 
+## Projeto
+
 A Fantastic Baby Store é uma loja de moda com foco em artigos de K-Pop, Geek e cultura pop no geral.
 
 ## Installation
