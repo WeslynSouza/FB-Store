@@ -31,12 +31,11 @@ Para acessar o layout utilize a ferramenta [figma](https://www.figma.com/file/N8
 
 ```sh
 git clone hhttps://github.com/WeslynSouza/FB-Store
-cd fbs-store
 npm install
 npm start
 ```
 
-## 🤔 Como contribuir
+## 💡 Como contribuir
 
 - Faça um fork desse repositório;
 - Cria uma branch com a sua feature: `git checkout -b minha-feature`;
