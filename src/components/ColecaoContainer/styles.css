@@ -5,10 +5,6 @@
     background: #fff;
 }
 
-.colecao-container:first-child {
-    margin-top: 1rem;
-}
-
 .colecao-container a img {
     width: 100%;
 }
@@ -18,7 +14,7 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    margin-top: -.2rem;
+    margin-top: -.25rem;
     height: 4rem;
     font-family: Montserrat;
 }
@@ -74,6 +70,6 @@
     }
 
     .colecao-container .colecao-container-detalhes a:hover {
-        opacity: 1;
+        background: #ba1c24;
     }  
 }

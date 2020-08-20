@@ -1,0 +1,13 @@
+.carousel .carousel-item {
+    display: none;
+    transition: 2s;
+    z-index: -1;
+}
+
+.carousel .active {
+    display: initial;
+}
+
+.carousel .carousel-item img{
+    width: 100%;
+}

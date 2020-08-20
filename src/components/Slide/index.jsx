@@ -6,40 +6,31 @@ import './styles.css';
 export default props => {
 
     let slideIndex = 1;
-    mostrarSlides(slideIndex);
 
-    function mudaSlide(n){
-        mostrarSlides(slideIndex += n);
+    function prevSlide(){
+        mostrarSlides(slideIndex -= 1);
+    }
+
+    function nextSlide(n){
+        mostrarSlides(slideIndex += 1);
     }
 
     function mostrarSlides(n) {
         let slides = document.getElementsByClassName('carousel-item');
         if(n > slides.length) slideIndex = 1;
         if(n < 1) slideIndex = slides.length;
-        for (let i in slides.length) {
+        for(let i = 0; i < slides.length; i++){
             slides[i].classList.remove('active');
         }
         slides[slideIndex - 1].classList.add('active');
     }
     
     return (
-        <div>
-            <div className='carousel'>
-                <button className='carousel-prev' onClick={mudaSlide(-1)}><FiChevronLeft/></button>
-                <button className='carousel-next' onClick={mudaSlide(1)}><FiChevronRight/></button>
+        <div className='carousel'>
+            <button className='carousel-prev' onClick={prevSlide}><FiChevronLeft/></button>
+            <button className='carousel-next' onClick={nextSlide}><FiChevronRight/></button>
 
-                <div className='carousel-item '>
-                    <img src={props.img1} alt="Slide 1"/>
-                </div>
-
-                <div className='carousel-item active'>
-                    <img src={props.img2} alt="Slide 2"/>
-                </div>
-
-                <div className='carousel-item'>
-                    <img src={props.img3} alt="Slide 3"/>
-                </div>
-            </div>
+            {props.children}
         </div>
     )
 }

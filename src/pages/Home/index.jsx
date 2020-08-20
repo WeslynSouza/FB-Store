@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import Menu from '../../components/Menu';
 import Rodape from '../../components/Rodape';
 import ColeçãoContainer from '../../components/ColecaoContainer';
+import Slide from '../../components/Slide';
+import SlideItem from '../../components/slideItem';
 
 import btsBanner from '../../assets/img/Slide-MOTS7.png';
 import mxBanner from '../../assets/img/Slide-MX.png';
@@ -16,7 +18,14 @@ class Home extends Component{
             <div>
                 <Menu color='var(--color-menu-principal)'/>
                 <main>
+
                     <div className='banner-container'>
+                        <Slide>
+                            <SlideItem img={btsBanner} alt='bts' ativo='true'/>
+                            <SlideItem img={mxBanner} alt='Mx'/>
+                            <SlideItem img={bpBanner} alt='Bp'/>
+                        </Slide>
+
                         <ColeçãoContainer 
                             img={btsBanner}
                             alt="Coleção bts"
