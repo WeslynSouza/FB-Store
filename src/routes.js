@@ -6,6 +6,7 @@ import MxStore from './pages/MxStore';
 import BtsStore from './pages/BtsStore';
 import BpStore from './pages/BpStore';
 import AboutUs from './pages/AboutUs';
+import Details from './pages/Details';
 
 export default () => {
     return (
@@ -15,6 +16,7 @@ export default () => {
             <Route path='/MxStore' component={MxStore}/>
             <Route path='/BtsStore' component={BtsStore}/>
             <Route path='/BpStore' component={BpStore}/>
+            <Route path='/Detalhes' component={Details}/>
         </BrowserRouter>
     )
 }

@@ -24,6 +24,7 @@ class MxStore extends Component {
                                     value={`R$ ${camisa.preço}`}
                                     bg='var(--color-caixa-mx1)'
                                     color='var(--color-fonte-mx1)'
+                                    href='/Detalhes'
                                 />
                             )
                         })}

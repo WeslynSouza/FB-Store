@@ -30,7 +30,9 @@ export default props => {
             <button className='carousel-prev' onClick={prevSlide}><FiChevronLeft/></button>
             <button className='carousel-next' onClick={nextSlide}><FiChevronRight/></button>
 
-            {props.children}
+            <div className="carousel-items">
+                {props.children}
+            </div>
         </div>
     )
 }

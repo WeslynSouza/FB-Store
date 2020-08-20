@@ -1,5 +1,5 @@
 .carousel {
-    width: 100vw;
+    width: 100%;
     position: relative;
     box-sizing: border-box;
     background: var(--color-menu-bp);
@@ -11,12 +11,14 @@
     cursor: pointer;
     position: absolute;
     top: 50%;
+    color: #eee;
     width: auto;
     padding: 1.6rem;
     font-size: 3rem;
     border: 0;
     background: transparent;
     transform: translate( 0, -50%);
+    z-index: 1;
 }
 
 .carousel .carousel-next {

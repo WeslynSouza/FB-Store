@@ -29,13 +29,14 @@
     margin-bottom: 1rem;
 }
 
-.box .box-detalhes button {
+.box .box-detalhes a {
     border: 0;
     background: transparent;
     font-size: 1.4rem;
     text-transform: uppercase;
     font-weight: 700;
     cursor: pointer;
+    text-decoration: none;
 }
 
 .box:nth-child(2n+1):last-child{
