@@ -1,12 +1,34 @@
 import React, { Component } from 'react';
+import { bindActionCreators } from 'redux';
+import { connect } from 'react-redux';
+
 import Menu from '../../components/Menu';
 import Rodape from '../../components/Rodape';
 import ProdutoCaixa from '../../components/ProdutoCaixa';
-import dadosIniciais from '../../data/dados_iniciais.json';
+import { getList } from './actions';
 
 import './styles.css';
 
 class BtsStore extends Component {
+
+    UNSAFE_componentWillMount(){
+        this.props.getList()
+    }
+
+    renderCamisas(){
+        const list = this.props.list || []
+        return list.map( camisa =>  (
+            <ProdutoCaixa 
+                key={camisa.titulo}
+                img={camisa.imagem}
+                alt='Camisa bts'
+                title={camisa.titulo}
+                value={`R$ ${camisa.preço}`}
+                bg='var(--color-caixa-bts)'
+                color='var(--color-menu-bts)'
+            />)
+        )
+    }
 
     render(){
         return (
@@ -14,19 +36,7 @@ class BtsStore extends Component {
                 <Menu color='var(--color-menu-bts)'/>
                 <div className='btsStore'>
                     <div className='products-container' >
-                        {dadosIniciais.coleções[0].camisas.map( camisa => {
-                            return (
-                                <ProdutoCaixa 
-                                    key={camisa.titulo}
-                                    img={camisa.imagem}
-                                    alt='Camisa bts'
-                                    title={camisa.titulo}
-                                    value={`R$ ${camisa.preço}`}
-                                    bg='var(--color-caixa-bts)'
-                                    color='var(--color-menu-bts)'
-                                />
-                            )
-                        })}
+                        {this.renderCamisas()}
                     </div>
                 </div>
                 <Rodape color='var(--color-rodape-bts)'/>
@@ -35,4 +45,6 @@ class BtsStore extends Component {
     }
 }
 
-export default BtsStore;
+const mapStateToProps = state => ({ list: state.btsStore.list })
+const mapDispatchToProps = dispatch => bindActionCreators({ getList }, dispatch)
+export default connect(mapStateToProps, mapDispatchToProps)(BtsStore);

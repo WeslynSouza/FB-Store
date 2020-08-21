@@ -1,6 +1,7 @@
 {
     "coleções": [
-        {
+        {   
+            "grupo": "BTS",
             "titulo": "BTS - Map Of The Soul 7",
             "camisas": [
                 {
@@ -60,7 +61,8 @@
                 }
             ]
         },
-        {
+        {   
+            "grupo": "MonstaX",
             "titulo": "Yeah! We Rock the Show",
             "camisas": [
                 {
@@ -131,6 +133,7 @@
             ]
         },
         {
+            "grupo": "BlackPink",
             "titulo": "How You Like That",
             "camisas": [
                 {
