@@ -10,7 +10,7 @@ export default props => {
             <div className='box-detalhes' style={{background: props.bg}}>
                 <h1>{props.title}</h1>
                 <h2>{props.value}</h2>
-                <Link to={props.href} style={{color: props.color}}>
+                <Link to={props.href} style={{color: props.color}} onClick={props.click}>
                     Detalhes
                 </Link>
             </div>

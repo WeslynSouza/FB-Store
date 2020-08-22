@@ -8,6 +8,10 @@
     padding: 2rem 7vw;
 }
 
+.camisa-detalhes .camisa-detalhes-container img {
+    width: 100%;
+}
+
 .camisa-detalhes .camisa-detalhes-container .camisa-detalhes-box {
     width: 100%;
     display: flex;
