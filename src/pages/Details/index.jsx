@@ -1,40 +1,27 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
+import { bindActionCreators } from 'redux';
 import Menu from '../../components/Menu';
 import Rodape from '../../components/Rodape';
 import Slide from '../../components/Slide';
 import SlideItem from '../../components/slideItem';
+import { buscaDetalhes } from '../Details/actions';
 
 import './styles.css';
 
 class Details extends Component {
 
-    constructor(props){
-        super(props);
-
-        if(this.props.page === 'mxStore'){
-            this.menu = 'var(--color-menu-mx1)';
-            this.rodape = 'var(--color-rodape-mx1)';
-            this.bg = 'var(--color-bg-mx1)';
-            this.caixa = 'var(--color-caixa-mx1)';
-        }else if(this.props.page === 'btsStore'){
-            this.menu = 'var(--color-menu-bts)';
-            this.rodape = 'var(--color-rodape-bts)';
-            this.bg = 'var(--color-bg-preto)';
-            this.caixa = 'var(--color-caixa-bts)';
-        }else if(this.props.page === 'bpStore'){
-            this.menu = 'var(--color-menu-bp)';
-            this.rodape = 'var(--color-menu-bp)';
-            this.bg = 'var(--color-bg-preto)';
-            this.caixa = 'var(--color-caixa-bp)';
-        }
+    UNSAFE_componentWillMount(){
+        if(!this.props.camisa.page){
+            this.props.buscaDetalhes()
+        } 
     }
 
     imageOuSlide(){
         let imagem =  this.props.camisa.imagem || [];
         if(this.props.camisa.imagem.length === 1){
             return (
-                <img src={imagem[0]}/>
+                <img src={imagem[0]} alt='imagem detalhes'/>
             )
         }else{
             return(
@@ -47,6 +34,24 @@ class Details extends Component {
     }
 
     render() {
+
+        if(this.props.camisa.page === 'mxStore'){
+            this.menu = 'var(--color-menu-mx1)';
+            this.rodape = 'var(--color-rodape-mx1)';
+            this.bg = 'var(--color-bg-mx1)';
+            this.caixa = 'var(--color-caixa-mx1)';
+        }else if(this.props.camisa.page === 'btsStore'){
+            this.menu = 'var(--color-menu-bts)';
+            this.rodape = 'var(--color-rodape-bts)';
+            this.bg = 'var(--color-bg-preto)';
+            this.caixa = 'var(--color-caixa-bts)';
+        }else if(this.props.camisa.page === 'bpStore'){
+            this.menu = 'var(--color-menu-bp)';
+            this.rodape = 'var(--color-menu-bp)';
+            this.bg = 'var(--color-bg-preto)';
+            this.caixa = 'var(--color-caixa-bp)';
+        }
+
         return (
             <div>
                 <Menu color={this.menu}/>
@@ -84,4 +89,5 @@ class Details extends Component {
 }
 
 const mapStateToProps = state => ({ camisa: state.details.camisa, page: state.details.page })
-export default connect(mapStateToProps, null)(Details);
+const mapDispatchToProps = dispatch => bindActionCreators({ buscaDetalhes }, dispatch)
+export default connect(mapStateToProps, mapDispatchToProps)(Details);

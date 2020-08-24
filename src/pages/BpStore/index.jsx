@@ -41,7 +41,6 @@ class BpStore extends Component {
                     <div className='products-container'>
                         {this.renderCamisas()}
                     </div>
-    
                 </div>
                 <Rodape color='var(--color-menu-bp)'/>
             </div>

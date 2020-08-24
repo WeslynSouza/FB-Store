@@ -1,10 +1,13 @@
-const INITIAL_STATE = { camisa: {}, page: '' }
+const INITIAL_STATE = { camisa: { titulo: '', preço: '', imagem: {}, page: ''}, }
 
 export default ( state = INITIAL_STATE, action ) => {    
     switch(action.type){
 
         case 'DETALHES':
-            return { ...state, camisa: action.payload[0], page: action.payload[1] }
+            return { ...state, camisa: action.payload }
+
+        case 'BUSCA_DETALHES':
+            return { ...state, camisa: action.payload }
 
         default: 
             return state
