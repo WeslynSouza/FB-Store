@@ -11,7 +11,7 @@ export default props => {
             <div className='box-detalhes' style={{background: props.bg}}>
                 <h1>{props.title}</h1>
                 <h2>{props.value}</h2>
-                <Link to={{ pathname: props.href, state: { teste: props.teste}}} style={{color: props.color}} onClick={props.click}>
+                <Link to={{ pathname: props.href, hash: props.hash}} style={{color: props.color}} onClick={props.click}>
                     Detalhes
                 </Link>
             </div>

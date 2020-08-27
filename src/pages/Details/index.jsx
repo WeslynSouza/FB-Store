@@ -5,21 +5,24 @@ import Menu from '../../components/Menu';
 import Rodape from '../../components/Rodape';
 import Slide from '../../components/Slide';
 import SlideItem from '../../components/slideItem';
-import { buscaDetalhes } from '../Details/actions';
+import { montaPagina } from '../Details/actions';
 
 import './styles.css';
 
 class Details extends Component {
 
     UNSAFE_componentWillMount(){
+
+        const [colecao, titulo] =  this.props.location.hash.split('/');
+
         if(!this.props.camisa.page){
-            this.props.buscaDetalhes()
+            this.props.montaPagina(colecao.split('#')[1], titulo)
         } 
     }
 
     imageOuSlide(){
         let imagem =  this.props.camisa.imagem || [];
-        if(this.props.camisa.imagem.length === 1){
+        if(!this.props.camisa.imagem == []){
             return (
                 <img src={imagem[0]} alt='imagem detalhes'/>
             )
@@ -34,8 +37,6 @@ class Details extends Component {
     }
 
     render() {
-
-        {console.log(this.props.location.state)}
 
         if(this.props.camisa.page === 'mxStore'){
             this.menu = 'var(--color-menu-mx1)';
@@ -91,5 +92,5 @@ class Details extends Component {
 }
 
 const mapStateToProps = state => ({ camisa: state.details.camisa, page: state.details.page })
-const mapDispatchToProps = dispatch => bindActionCreators({ buscaDetalhes }, dispatch)
+const mapDispatchToProps = dispatch => bindActionCreators({ montaPagina }, dispatch)
 export default connect(mapStateToProps, mapDispatchToProps)(Details);
