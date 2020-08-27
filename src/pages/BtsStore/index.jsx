@@ -28,6 +28,7 @@ class BtsStore extends Component {
                 bg='var(--color-caixa-bts)'
                 color='var(--color-menu-bts)'
                 href='/Detalhes'
+                teste='Teste2'
                 click={() => this.props.detalhes(camisa, "btsStore")}
             />)
         )

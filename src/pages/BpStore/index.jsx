@@ -28,6 +28,7 @@ class BpStore extends Component {
                 bg='var(--color-caixa-bp)'
                 color='var(--color-fonte-bp)'
                 href='/Detalhes'
+                teste='Teste1'
                 click={() => this.props.detalhes(camisa, "bpStore")}
             />)
         )

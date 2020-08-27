@@ -35,6 +35,8 @@ class Details extends Component {
 
     render() {
 
+        {console.log(this.props.location.state)}
+
         if(this.props.camisa.page === 'mxStore'){
             this.menu = 'var(--color-menu-mx1)';
             this.rodape = 'var(--color-rodape-mx1)';
