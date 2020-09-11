@@ -3,7 +3,6 @@
 
     --color-menu-principal: #AB1A21;
     --color-rodape-principal: #671010;
-    --color-fonte-normal: #FFFFFF;
     --color-fonte-secundaria: #666666;
     --color-menu-mx1: #4006A9;
     --color-bg-mx1: #390EA4;
@@ -32,7 +31,8 @@ html, body, #root {
 }
 
 body {
-    background: #000;
+    background: #fff;
+    font-family: Montserrat;
 }
 
 #root {
@@ -43,12 +43,8 @@ body,
 input,
 button,
 textarea {
-    color: var(--color-fonte-normal);
-}
-
-.container{
-    width: 100%;
-    max-width: 900px;
+    color: #fff;
+    font-family: Montserrat;
 }
 
 @media( min-width: 700px ) {

@@ -22,7 +22,7 @@ class Details extends Component {
 
     imageOuSlide(){
         let imagem =  this.props.camisa.imagem || [];
-        if(!this.props.camisa.imagem == []){
+        if(!this.props.camisa.imagem === []){
             return (
                 <img src={imagem[0]} alt='imagem detalhes'/>
             )

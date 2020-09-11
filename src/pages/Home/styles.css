@@ -1,6 +1,23 @@
-main .banner-container {
+main{
+    box-sizing: border-box;
+}
+
+.banner-container {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
+}
+
+.colecoes {
+    display: flex;
+    max-width: 1000px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+@media ( min-width: 1000px ){
+    main{
+        padding: 0;
+    }
 }

@@ -1,5 +1,6 @@
 import React from 'react';
 import { FiChevronLeft, FiChevronRight } from 'react-icons/fi';
+import { FaCircle, FaRegCircle } from 'react-icons/fa';
 
 import './styles.css';
 
@@ -32,6 +33,12 @@ export default props => {
 
             <div className="carousel-items">
                 {props.children}
+            </div>
+
+            <div className='carousel-options'>
+                <FaCircle/>
+                <FaRegCircle/>
+                <FaRegCircle/>
             </div>
         </div>
     )

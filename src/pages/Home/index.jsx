@@ -26,26 +26,28 @@ class Home extends Component{
                             <SlideItem img={bpBanner} alt='Bp'/>
                         </Slide>
 
-                        <ColeçãoContainer 
-                            img={btsBanner}
-                            alt="Coleção bts"
-                            titulo="BTS Map Of The Soul 7"
-                            href="/BtsStore"               
-                        />
-    
-                        <ColeçãoContainer 
-                            img={mxBanner}
-                            alt="Coleção Monsta X"
-                            titulo="Monsta X Yeah! We Rock The Show"
-                            href="/MxStore"               
-                        />
-    
-                        <ColeçãoContainer 
-                            img={bpBanner}
-                            alt="Coleção BlackPink"
-                            titulo="BlackPink How You Like That"
-                            href="/BpStore"                 
-                        />
+                        <div className="colecoes">
+                            <ColeçãoContainer 
+                                img={btsBanner}
+                                alt="Coleção bts"
+                                titulo="BTS Map Of The Soul 7"
+                                href="/BtsStore"               
+                            />
+        
+                            <ColeçãoContainer 
+                                img={mxBanner}
+                                alt="Coleção Monsta X"
+                                titulo="Yeah! We Rock The Show"
+                                href="/MxStore"               
+                            />
+        
+                            <ColeçãoContainer 
+                                img={bpBanner}
+                                alt="Coleção BlackPink"
+                                titulo="How You Like That"
+                                href="/BpStore"                 
+                            />
+                        </div>
                     </div>
                 </main>
                 <Rodape color='var(--color-rodape-principal)'/>

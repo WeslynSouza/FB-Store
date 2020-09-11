@@ -1,7 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-import menuIcon from '../../assets/img/Menu.png';
+import { AiOutlineMenu } from 'react-icons/ai';
+import { FaSearch } from 'react-icons/fa';
 import cartIcon from '../../assets/img/Cart.png';
 
 import './styles.css';
@@ -32,26 +33,37 @@ export default props => {
     })
 
     return (
-        <header>
-            <div className='nav' style={{backgroundColor: props.color}}>
+        <div>
+            <header style={{backgroundColor: props.color}}>
                 <nav className='navbar' id="nav" style={{backgroundColor: props.color}}>
-                    <ul className='menu'>
-                        <li className='menu-item'>
-                            <button onClick={openNav}>
-                                <img src={menuIcon} alt="Icone de menu"/>
+                    
+                    <div className="navbar-area">
+                        <button onClick={openNav} className='dropdown-button'>
+                            <AiOutlineMenu/>
+                        </button>
+
+                        <Link to='/' className='logo'>fantastic baby store</Link>
+
+                        <ul className='menu'>
+                            <li className="menu-item">Início</li>
+                            <li className="menu-item">K-Pop</li>
+                            <li className="menu-item">Animes</li>
+                            <li className="menu-item">Jogos</li>
+                            <li className="menu-item">Series</li>
+                        </ul>
+
+                        <div className="search">
+                            <input type="text" name="search" id="search" placeholder="Pesquise..."/>
+                            <button>
+                                <FaSearch/>
                             </button>
-                        </li>
+                        </div>
 
-                        <li className='menu-item'>
-                            <Link to='/'><h2>fantastic baby store</h2></Link>
-                        </li>
+                        <Link to='/' className='icon-carrinho'><img src={cartIcon} alt="Icone de carrinho"/></Link>
+                    </div>
 
-                        <li className='menu-item'>
-                            <a href='/'><img src={cartIcon} alt="Icone de carrinho"/></a>
-                        </li>
-                    </ul>
                 </nav>
-            </div>
+            </header>
 
             <div className='sidenav' id='sidenav' style={{background: props.color}}>
                 <button onClick={closeNav} className='closebtn'>X</button>
@@ -63,6 +75,6 @@ export default props => {
                 <Link to='/bpStore'>How You Like That</Link>
             </div>
 
-        </header>
+        </div>
     )
 }
