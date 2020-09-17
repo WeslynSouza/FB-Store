@@ -1,0 +1,46 @@
+.mxStore {
+    background: var(--color-bg-mx1);
+    min-height: 76.5vh;
+    max-width: 100vw;
+}
+
+.mxStore .products-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.mxStore header {
+    background: var(--color-menu-mx1);
+}
+
+.mxStore .navbar {
+    background: var(--color-menu-mx1);
+}
+
+.mxStore .sidenav {
+    background: var(--color-menu-mx1);
+}
+
+.mxStore .box-detalhes {
+    background: var(--color-caixa-mx1);
+}
+
+.mxStore .box-detalhes h1, .mxStore .box-detalhes h2 {
+    color: #fff;
+}
+
+.mxStore .box-detalhes a {
+    color: var(--color-fonte-mx1);
+}
+
+.mxStore footer {
+    background: var(--color-rodape-mx1);
+}
+
+@media ( min-width: 1000px ){
+
+    .products-container {
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+}

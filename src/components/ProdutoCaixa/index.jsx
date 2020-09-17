@@ -8,10 +8,10 @@ export default props => {
     return  (
         <div className='box'>
             <img src={props.img} alt={props.alt}/>
-            <div className='box-detalhes' style={{background: props.bg}}>
+            <div className='box-detalhes'>
                 <h1>{props.title}</h1>
                 <h2>{props.value}</h2>
-                <Link to={{ pathname: props.href, hash: props.hash}} style={{color: props.color}} onClick={props.click}>
+                <Link to={{ pathname: props.href, hash: props.hash}} onClick={props.click}>
                     Detalhes
                 </Link>
             </div>

@@ -1,0 +1,45 @@
+.btsStore {
+    background: var(--color-bg-preto);
+    min-height: 76.5vh;
+}
+
+.btsStore .products-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.btsStore header {
+    background: var(--color-menu-bts);
+}
+
+.btsStore .navbar {
+    background: var(--color-menu-bts);
+}
+
+.btsStore .sidenav {
+    background: var(--color-menu-bts);
+}
+
+.btsStore .box-detalhes {
+    background: var(--color-caixa-bts);
+}
+
+.btsStore .box-detalhes h1, .btsStore .box-detalhes h2 {
+    color: #fff;
+}
+
+.btsStore .box-detalhes a {
+    color: var(--color-menu-bts);
+}
+
+.btsStore footer {
+    background: var(--color-rodape-bts);
+}
+
+@media ( min-width: 1000px ){
+
+    .products-container {
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+}

@@ -1,4 +1,4 @@
-import dadosIniciais from '../../data/dados_iniciais.json';
+import dadosIniciais from '../../../data/dados_iniciais.json';
 
 export function getList() {
     const request = dadosIniciais.coleções[0].camisas;

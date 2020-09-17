@@ -1,10 +1,12 @@
 
 header {
+    background: var(--color-red-primary);
     width: 100vw;
     height: 4.4rem;
 }
 
 .navbar{
+    background: var(--color-red-primary);
     width: 100vw;
     height: 4.4rem;
     position: fixed;
@@ -99,11 +101,11 @@ header {
 /* Menu Sidebar */
 
 .sidenav{
+    background: var(--color-red-primary);
     height: 100%;
     width: 0;
     position: fixed;
     z-index: 1;
-    background: #333;
     top: 0;
     left: 0;
     overflow-x: hidden;

@@ -22,7 +22,7 @@
 }
 
 .colecao-container-detalhes h1 {
-    color: var(--color-bg-preto);
+    color: #000;
     width: 50%;
     height: 70%;
     border-right: 1px #000 solid;
@@ -35,7 +35,7 @@
 }
 
 .colecao-container-detalhes a {
-    color: var(--color-menu-principal);
+    color: var(--color-red-primary);
     width: 50%;
     height: 70%;
     border-left: 1px #000 solid;

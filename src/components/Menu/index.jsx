@@ -34,8 +34,8 @@ export default props => {
 
     return (
         <div>
-            <header style={{backgroundColor: props.color}}>
-                <nav className='navbar' id="nav" style={{backgroundColor: props.color}}>
+            <header>
+                <nav className='navbar' id="nav">
                     
                     <div className="navbar-area">
                         <button onClick={openNav} className='dropdown-button'>
@@ -59,13 +59,13 @@ export default props => {
                             </button>
                         </div>
 
-                        <Link to='/' className='icon-carrinho'><img src={cartIcon} alt="Icone de carrinho"/></Link>
+                        <Link to='/Carrinho' className='icon-carrinho'><img src={cartIcon} alt="Icone de carrinho"/></Link>
                     </div>
 
                 </nav>
             </header>
 
-            <div className='sidenav' id='sidenav' style={{background: props.color}}>
+            <div className='sidenav' id='sidenav'>
                 <button onClick={closeNav} className='closebtn'>X</button>
                 <Link to='/'>Início</Link>
                 <Link to='#'>Carrinho</Link>

@@ -1,4 +1,5 @@
 footer {
+    background: var(--color-red-secondary);
     display: flex;
     flex-direction: column;
     align-items: center;

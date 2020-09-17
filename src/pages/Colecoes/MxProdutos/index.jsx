@@ -2,11 +2,11 @@ import React, { Component } from 'react';
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
 
-import Menu from '../../components/Menu';
-import Rodape from '../../components/Rodape';
-import ProdutoCaixa from '../../components/ProdutoCaixa';
+import Menu from '../../../components/Menu';
+import Rodape from '../../../components/Rodape';
+import ProdutoCaixa from '../../../components/ProdutoCaixa';
 import { getList } from './actions';
-import { detalhes } from '../Details/actions';
+import { detalhes } from '../../Detalhes/actions';
 
 import './styles.css';
 
@@ -25,8 +25,6 @@ class MxStore extends Component {
                 alt='Camisa Monsta X'
                 title={camisa.titulo}
                 value={`R$ ${camisa.preço}`}
-                bg='var(--color-caixa-mx1)'
-                color='var(--color-fonte-mx1)'
                 href='/Detalhes'
                 hash={`mxStore/${camisa.titulo}`}
                 click={() => this.props.detalhes(camisa, "mxStore")}
@@ -36,14 +34,12 @@ class MxStore extends Component {
 
     render(){
         return (
-            <div>
-                <Menu color='var(--color-menu-mx1)'/>
-                <div className='mxStore'>
-                    <div className='products-container'>
-                        {this.renderCamisas()}
-                    </div>
+            <div className='mxStore'>
+                <Menu/>
+                <div className='products-container'>
+                    {this.renderCamisas()}
                 </div>
-                <Rodape color='var(--color-rodape-mx1)'/>
+                <Rodape/>
             </div>
         )
     }

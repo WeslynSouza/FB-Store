@@ -29,7 +29,7 @@
     display: none;
     max-width: 9rem;
     height: 4rem;
-    color: var(--color-menu-principal);
+    color: var(--color-red-primary);
     font-size: 1.6rem;
     justify-content: space-around;
     align-items: center;

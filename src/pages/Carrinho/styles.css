@@ -62,7 +62,7 @@
 .card-linha {
     width: 90%;
     height: .2rem;
-    background: var(--color-menu-principal);
+    background: var(--color-red-primary);
     margin: 1.5rem auto 0;
 }
 
@@ -99,7 +99,7 @@
 .calcular-btn {
     border: 0;
     background: #fff;
-    color: var(--color-menu-principal);
+    color: var(--color-red-primary);
     text-transform: uppercase;
     font-weight: 700;
     font-size: 1.4rem;

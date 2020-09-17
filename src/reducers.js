@@ -1,9 +1,9 @@
 import { combineReducers } from 'redux';
 
-import BtsStoreReducer from './pages/BtsStore/reducer';
-import MxStoreReducer from './pages/MxStore/reducers';
-import BpStoreReducer from './pages/BpStore/reducer';
-import DetailsReducer from './pages/Details/reducers';
+import BtsStoreReducer from './pages/Colecoes/BtsProdutos/reducer';
+import MxStoreReducer from './pages/Colecoes/MxProdutos/reducer';
+import BpStoreReducer from './pages/Colecoes/BpProdutos/reducer';
+import DetailsReducer from './pages/Detalhes/reducers';
 
 const rootReducer = combineReducers({
     btsStore: BtsStoreReducer,

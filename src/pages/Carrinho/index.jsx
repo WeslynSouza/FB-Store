@@ -12,7 +12,7 @@ export default props => {
 
     return (
         <div>
-            <Menu color='var(--color-menu-principal)'/>
+            <Menu/>
             
             <main>
                 <div className="cards">
@@ -56,7 +56,7 @@ export default props => {
                 </div>
             </main>
 
-            <Rodape color='var(--color-menu-principal)'/>
+            <Rodape/>
         </div>
     )
 }

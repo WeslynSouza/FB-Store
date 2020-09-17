@@ -1,24 +1,26 @@
 import React from 'react';
 import { BrowserRouter, Route } from 'react-router-dom';
 
-import Home from './pages/Home';
-import MxStore from './pages/MxStore';
-import BtsStore from './pages/BtsStore';
-import BpStore from './pages/BpStore';
-import AboutUs from './pages/AboutUs';
-import Details from './pages/Details';
-import ShoppingCart from './pages/ShoppingCart';
+import Inicio from './pages/Inicio';
+import MxProdutos from './pages/Colecoes/MxProdutos';
+import BtsProdutos from './pages/Colecoes/BtsProdutos';
+import BpProdutos from './pages/Colecoes/BpProdutos';
+import Produtos from './pages/Produtos';
+import SobreNos from './pages/SobreNos';
+import Detalhes from './pages/Detalhes';
+import Carrinho from './pages/Carrinho';
 
 export default () => {
     return (
         <BrowserRouter>
-            <Route path='/' exact component={Home}/>
-            <Route path='/SobreNos' component={AboutUs}/>
-            <Route path='/MxStore' component={MxStore}/>
-            <Route path='/BtsStore' component={BtsStore}/>
-            <Route path='/BpStore' component={BpStore}/>
-            <Route path='/Detalhes' component={Details}/>
-            <Route path='/Carrinho' component={ShoppingCart}/>
+            <Route path='/' exact component={Inicio}/>
+            <Route path='/SobreNos' component={SobreNos}/>
+            <Route path='/MxStore' component={MxProdutos}/>
+            <Route path='/BtsStore' component={BtsProdutos}/>
+            <Route path='/BpStore' component={BpProdutos}/>
+            <Route path='/Detalhes' component={Detalhes}/>
+            <Route path='/Carrinho' component={Carrinho}/>
+            <Route path='/Produtos' component={Produtos}/>
         </BrowserRouter>
     )
 }
