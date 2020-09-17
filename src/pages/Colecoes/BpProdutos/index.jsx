@@ -5,7 +5,7 @@ import { connect } from 'react-redux';
 import Menu from '../../../components/Menu';
 import Rodape from '../../../components/Rodape';
 import ProdutoCaixa from '../../../components/ProdutoCaixa';
-import { getList } from './actions';
+import { getList } from '../../Produtos/actions';
 import { detalhes } from '../../Detalhes/actions';
 
 import './styles.css';
@@ -13,7 +13,7 @@ import './styles.css';
 class BpStore extends Component {
 
     UNSAFE_componentWillMount(){
-        this.props.getList()
+        this.props.getList(2)
     }
 
     renderCamisas(){
@@ -45,6 +45,6 @@ class BpStore extends Component {
     }
 }
 
-const mapStateToProps = state => ({ list: state.bpStore.list })
+const mapStateToProps = state => ({ list: state.produtos.list })
 const mapDispatchToProps = dispatch => bindActionCreators({ getList, detalhes }, dispatch)
 export default connect(mapStateToProps, mapDispatchToProps)(BpStore);

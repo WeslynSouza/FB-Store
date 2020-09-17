@@ -44,7 +44,7 @@
     margin: 1.5rem 10vw;
 }
 
-@media( min-width: 700px ){
+@media( min-width: 1000px ){
     .box {
         width: 23%;
         margin: 2rem 0rem 2rem 2.5rem;

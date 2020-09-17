@@ -5,7 +5,7 @@ import { connect } from 'react-redux';
 import Menu from '../../components/Menu';
 import Rodape from '../../components/Rodape';
 import ProdutoCaixa from '../../components/ProdutoCaixa';
-import { getList } from '../Colecoes/BtsProdutos/actions';
+import { getList } from './actions';
 import { detalhes } from '../Detalhes/actions';
 
 import './styles.css';
@@ -45,6 +45,6 @@ class BpStore extends Component {
     }
 }
 
-const mapStateToProps = state => ({ list: state.btsStore.list })
+const mapStateToProps = state => ({ list: state.produtos.list })
 const mapDispatchToProps = dispatch => bindActionCreators({ getList, detalhes }, dispatch)
 export default connect(mapStateToProps, mapDispatchToProps)(BpStore);
