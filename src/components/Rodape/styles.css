@@ -4,30 +4,107 @@ footer {
     flex-direction: column;
     align-items: center;
     position: relative;
+    box-shadow: 0px -4px 8px rgba(0, 0, 0, 0.2);
 }
 
 footer h1 {
-    font-size: 1.6rem;
-    text-transform: uppercase;
-    margin-top: 1.3rem;
-    margin-bottom: 1.3rem;
+    font-size: 2rem;
+    font-weight: 700;
     font-style: italic;
+    text-transform: uppercase;
+    margin-top: 2.2rem;
+    margin-bottom: .5rem;
+}
+
+footer h2 {
+    font-size: 1.6rem;
+    font-weight: 600;
+    margin-top: .8rem;
+    margin-bottom: 2.3rem;
+}
+
+footer h2 {
+    margin-top: 3rem;
 }
 
 footer p{
-    width: 80vw;
-    font-size: 1.2rem;
+    color: #f4f4f4;
+    font-size: 1.3rem;
     text-align: center;
+    opacity: 0.8;
 }
 
 footer p + p {
-    margin-top: 1.4rem;
+    margin-top: 1rem;
+}
+
+footer a{
+    color: #f4f4f4;
+    font-size: 1.3rem;
+    text-align: center;
+    opacity: 0.8;
+}
+
+footer a + a {
+    margin-top: 1rem;
+}
+
+.redes {
+    width: 35%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 2.8rem;
+}
+
+.pagamento{
+    display: flex;
+    flex-direction: row;
+}
+
+.cartao {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.pag-icons {
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.pag-icons img {
+    width: 6rem;
+    margin-top: 1rem;
+}
+
+.boleto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30%;
+    border-left: .1rem solid rgba(255, 255, 255, 0.2);
+}
+
+.boleto img {
+    width: 8rem;
+    margin-top: 2rem;
 }
 
 footer h3 {
-    font-size: 1.4rem;
+    font-size: 1.6rem;
+    font-weight: 400;
+    opacity: 0.8;
+}
+
+footer h4 {
+    font-size: 1rem;
     font-weight: 200;
-    margin-top: 1.3rem;
+    margin-top: 2.2rem;
     margin-bottom: 1.3rem;
     opacity: 0.7;
 }

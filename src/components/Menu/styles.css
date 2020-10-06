@@ -1,14 +1,15 @@
 
 header {
-    background: var(--color-red-primary);
+    background-color: #fff;
     width: 100vw;
-    height: 4.4rem;
+    height: 10.4rem;
+    box-shadow: 2px 6px #000;
 }
 
 .navbar{
-    background: var(--color-red-primary);
+    background: #fff;
     width: 100vw;
-    height: 4.4rem;
+    height: 5.2rem;
     position: fixed;
     top: 0;
     left: 0;
@@ -16,23 +17,12 @@ header {
     z-index: 1;
 }
 
-.navbar-area {
-    height: 100%;
+.logo-bar {
+    background: var(--color-red-primary);
+    height: 5.2rem;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    flex-direction: row;
-}
-
-.dropdown-button {
-    display: initial;
-    border: 0;
-    background: transparent;
-    cursor: pointer;
-    font-size: 3.4rem;
-    display: flex;
-    align-items: center;
-    margin: 0 0.5rem;
 }
 
 .logo {
@@ -42,6 +32,62 @@ header {
     text-transform: uppercase;
     text-decoration: none;
     color: #fff;
+    text-shadow: -4px 3px 4px rgba(0, 0, 0, 0.5);
+}
+
+.navbar-area {
+    background: #fff;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+}
+
+.menu-icon {
+    color: var(--color-red-primary);
+    display: initial;
+    border: 0;
+    background: transparent;
+    cursor: pointer;
+    font-size: 2.8rem;
+    display: flex;
+    align-items: center;
+    margin: 0 1.6rem;
+    text-shadow: 2px 2px #000;
+}
+
+.icons {
+    width: 30%;
+    height: 100%;
+    margin: 0 1.6rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.search-icon{
+    border: 0;
+    background: transparent;
+    font-size: 2.8rem;
+    color: var(--color-red-primary);
+    display: flex;
+    align-items: center;
+}
+
+.user-icon{
+    font-size: 3.2rem;
+    color: var(--color-red-primary);
+    display: flex;
+    align-items: center;
+}
+
+.carrinho-icon{
+    font-size: 2.8rem;
+    color: var(--color-red-primary);
+    display: flex;
+    align-items: center;
 }
 
 .menu {
@@ -92,16 +138,10 @@ header {
     justify-content: center;
 }
 
-.icon-carrinho img{
-    width: 4.4rem;
-    height: 4.4rem;
-    margin: 0 0.5rem;
-}
-
 /* Menu Sidebar */
 
 .sidenav{
-    background: var(--color-red-primary);
+    background: #fff;
     height: 100%;
     width: 0;
     position: fixed;
@@ -109,27 +149,40 @@ header {
     top: 0;
     left: 0;
     overflow-x: hidden;
-    transition: 0.4s;
+    transition: width 0.4s ;
     padding-top: 6.5rem;
 }
 
 .sidenav a {
-    padding: 1.5rem 0;
+    padding: 2rem 0;
+    margin: 0 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 0.2rem solid var(--color-cinza);
+    color: var(--color-fonte);
     text-decoration: none;
-    font-size: 2.1rem;
-    display: block;
-    border-bottom: 0.2rem solid #fff;
-    color: #fff;
-    margin: 0 1rem;
-    text-align: center;
+    font-size: 1.8rem;
+    font-weight: 700;  
+}
+
+.sidenav a svg {
+    position: relative;
+    top: .3rem;
+    margin-right: .4rem;
+}
+
+.sidenav a svg:nth-child(2){
+    right: 0rem;
 }
 
 .closebtn {
     position: absolute;
     top: 0.5rem;
-    right: 2.5rem;
-    font-size: 3.6rem;
+    right: 1.5rem;
+    font-size: 2.5rem;
+    font-weight: 700;
     margin-left: 5.0rem;
+    color: var(--color-fonte);
     border: 0;
     background: transparent;
 }
