@@ -42,14 +42,16 @@ export default props => {
                     <div className="navbar-area">
                         <button onClick={openNav} className='menu-icon'>
                             <FaBars/>
-                        </button>                        
+                        </button>   
+
+                        <Link to='/' className='logo logo2'>fantastic baby store</Link>                     
 
                         <ul className='menu'>
-                            <li className="menu-item"><FaHome/> Início</li>
-                            <li className="menu-item"><FaMusic/> K-Pop</li>
-                            <li className="menu-item"><FaChessRook/> Animes</li>
-                            <li className="menu-item"><FaGamepad/> Jogos</li>
-                            <li className="menu-item"><FaFilm/> Series</li>
+                            <li className="menu-item">Início</li>
+                            <li className="menu-item">K-Pop</li>
+                            <li className="menu-item">Animes</li>
+                            <li className="menu-item">Jogos</li>
+                            <li className="menu-item">Series</li>
                         </ul>
 
                         <div className="search">
@@ -73,6 +75,10 @@ export default props => {
                             </Link>
                         </div>
 
+                    </div>
+
+                    <div className="search-bar">
+                        
                     </div>
 
                 </nav>
