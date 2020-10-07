@@ -156,7 +156,12 @@ header {
     padding-top: 6.5rem;
 }
 
-.sidenav a {
+.dropdown {
+    display: flex;
+    flex-direction: column;
+}
+
+.opt-principal {
     padding: 2rem 0;
     margin: 0 1.5rem;
     display: flex;
@@ -168,14 +173,30 @@ header {
     font-weight: 700;  
 }
 
-.sidenav a svg {
+.opt-principal svg {
     position: relative;
     top: .3rem;
     margin-right: .4rem;
 }
 
-.sidenav a svg:nth-child(2){
+.opt-principal svg:nth-child(2){
     right: 0rem;
+}
+
+.opt-secundaria {
+    padding: 1.5rem 0;
+    margin: 0 1.5rem;
+    border-bottom: 0.2rem solid var(--color-cinza);
+    color: var(--color-fonte);
+    text-decoration: none;
+    font-size: 1.4rem;
+    font-weight: 400;  
+}
+
+.opt-itens {
+    display: none;
+    flex-direction: column;
+    transition: 1s;
 }
 
 .closebtn {

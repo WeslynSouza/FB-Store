@@ -18,6 +18,15 @@ export default props => {
         document.querySelector("nav").style.opacity = '1';
     }
 
+    function dropdown() {
+        let opt = document.querySelector('.opt-itens')
+        if(opt.style.display === 'flex'){
+            opt.style.display = 'none'
+        }else{
+            opt.style.display = 'flex'
+        }
+    }
+
     let lastScrolltop = 0;
     document.querySelector('#root').addEventListener("scroll", function() {
       let scrollTop = document.querySelector('#root').scrollTop;
@@ -86,26 +95,31 @@ export default props => {
 
             <div className='sidenav' id='sidenav'>
                 <button onClick={closeNav} className='closebtn'>X</button>
-                <Link to='/'>
+                <Link to='/' className='opt-principal'>
                     <div><FaHome/> Início</div>
                 </Link>
-                <Link to='#'>
+                <Link to='#' className='opt-principal'>
                     <div><FaShoppingCart/> Carrinho</div>
                 </Link>
-                <Link to='#'>
-                    <div><FaMusic/> K-pop</div>
-                    <FaChevronDown/>
-                </Link>
-                <Link to='#'>
+                <div className='dropdown'>
+                    <div className='opt-principal opt-dropdown' onClick={dropdown}>
+                        <div><FaMusic/> K-pop</div>
+                        <FaChevronDown/>
+                    </div>
+                    <div className="opt-itens">
+                        <Link to='#' className='opt-secundaria'>BTS</Link>
+                        <Link to='#' className='opt-secundaria'>Monsta X</Link>
+                        <Link to='#' className='opt-secundaria'>BlackPink</Link>
+                    </div>
+                </div>
+                <Link to='#' className='opt-principal'>
                     <div><FaChessRook/> Animes</div>
                 </Link>
-                <Link to='#'>
+                <Link to='#' className='opt-principal'>
                     <div><FaFilm/> FIlmes/Series</div>
-                    <FaChevronDown/>
                 </Link>
-                <Link to='#'>
+                <Link to='#' className='opt-principal'>
                     <div><FaGamepad/> Jogos</div>
-                    <FaChevronDown/>
                 </Link>
             </div>
 
