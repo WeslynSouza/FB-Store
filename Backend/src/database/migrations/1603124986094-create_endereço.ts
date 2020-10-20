@@ -7,6 +7,14 @@ export class createEndereço1603124986094 implements MigrationInterface {
             name: 'endereço',
             columns: [
                 {
+                    name: "id",
+                    type: "integer",
+                    unsigned: true,
+                    isPrimary: true,
+                    isGenerated: true,
+                    generationStrategy: 'increment'
+                },
+                {
                     name: 'usuarioEmail',
                     type: 'varchar',
                 },

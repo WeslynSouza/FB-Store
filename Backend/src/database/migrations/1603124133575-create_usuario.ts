@@ -9,7 +9,6 @@ export class createUsuario1603124133575 implements MigrationInterface {
                 {
                     name: 'email',
                     type: 'varchar',
-                    unsigned: true,
                     isPrimary: true,
                 },
                 {
@@ -19,6 +18,11 @@ export class createUsuario1603124133575 implements MigrationInterface {
                 {
                     name: 'cel',
                     type: 'integer'
+                },
+                {
+                    name: 'avatar',
+                    type: 'varchar',
+                    isNullable: true
                 },
                 {
                     name: 'senha',

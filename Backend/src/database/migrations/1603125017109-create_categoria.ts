@@ -16,7 +16,8 @@ export class createCategoria1603125017109 implements MigrationInterface {
                 },
                 {
                     name: 'nome',
-                    type: 'varchar'
+                    type: 'varchar',
+                    isUnique: true
                 },
                 {
                     name: 'logoUrl',
