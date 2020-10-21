@@ -1,5 +1,6 @@
 import { Column, Entity, JoinColumn, OneToMany, PrimaryColumn } from 'typeorm'
 import Endereço from './endereco';
+import Pedido from './pedido';
 
 @Entity('Usuario')
 export default class Usuario {
@@ -24,4 +25,10 @@ export default class Usuario {
     })
     @JoinColumn({ name: 'usuarioEmail' })
     endereços: Endereço[];
+
+    @OneToMany(() => Pedido, pedido => pedido.usuario, {
+        cascade: ['update', 'remove']
+    })
+    @JoinColumn({ name: 'emailUsuario' })
+    pedidos: Pedido[];
 }

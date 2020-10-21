@@ -6,6 +6,7 @@ import UsuarioController from './controllers/usuarioController';
 import EndereçosController from './controllers/endereçoController';
 import CategoriaController from './controllers/categoriaController';
 import ProdutoController from './controllers/produtoController';
+import PedidoController from './controllers/pedidoController';
 
 const routes = Router();
 const upload = multer(uploadConfig);
@@ -25,5 +26,7 @@ routes.post("/categorias", upload.array('imagens'), CategoriaController.create);
 routes.get("/produtos", ProdutoController.index);
 routes.get("/produtos/:id", ProdutoController.show);
 routes.post("/produtos", upload.array('imagens'), ProdutoController.create);
+
+routes.post("/pedidos", PedidoController.create);
 
 export default routes;
