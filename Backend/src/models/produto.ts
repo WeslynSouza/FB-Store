@@ -1,6 +1,7 @@
-import { Column, Entity, JoinColumn, ManyToOne, PrimaryGeneratedColumn } from 'typeorm';
+import { Column, Entity, JoinColumn, ManyToOne, OneToMany, PrimaryGeneratedColumn } from 'typeorm';
 
 import Categoria from './categoria';
+import Imagem from './imagem';
 
 @Entity('Produto')
 export default class Produto{
@@ -16,6 +17,12 @@ export default class Produto{
 
     @Column()
     tipo: string;
+    
+    @OneToMany(() => Imagem, Imagem => Imagem.produto, {
+        cascade: ['insert', 'update', 'remove']
+    })
+    @JoinColumn({ name: 'idProduto' })
+    imagens: Imagem[];
 
     @ManyToOne(() => Categoria, Categoria => Categoria.produtos)
     @JoinColumn({ name: 'idCategoria'})

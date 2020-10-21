@@ -1,5 +1,6 @@
 import { Request, Response } from 'express';
 import { getRepository } from 'typeorm'
+import EndereçoView from '../views/endereçoView';
 
 import Endereço from '../models/endereco';
 import Usuario from '../models/usuario';
@@ -8,25 +9,25 @@ export default {
 
     async index(req: Request, res: Response){
 
-        const produtoRepository = getRepository(Endereço);
+        const endereçoRepository = getRepository(Endereço);
 
-        const produto = await produtoRepository.find({
+        const endereços = await endereçoRepository.find({
             relations: ['usuario']
         });
 
-        return res.status(200).json(produto);
+        return res.status(200).json(EndereçoView.renderMany(endereços));
     },
 
     async show(req: Request, res: Response){
         const { id } = req.params;
 
-        const produtoRepository = getRepository(Endereço);
+        const endereçoRepository = getRepository(Endereço);
 
-        const produto = await produtoRepository.findOneOrFail(id, {
+        const endereço = await endereçoRepository.findOneOrFail(id, {
             relations: ['usuario']
         });
 
-        return res.status(200).json(produto);
+        return res.status(200).json(EndereçoView.render(endereço));
     },
 
     async create(req: Request, res: Response) {

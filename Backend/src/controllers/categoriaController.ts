@@ -1,5 +1,6 @@
 import { Request, Response } from 'express';
 import { getRepository } from 'typeorm';
+import CategoriaView from '../views/categoriaView';
 
 import Categoria from '../models/categoria';
 
@@ -10,7 +11,7 @@ export default {
 
         const categorias = await categoriasRepository.find();
 
-        return res.status(200).json(categorias);
+        return res.status(200).json(CategoriaView.renderMany(categorias));
     },
 
     async show(req: Request, res: Response){
@@ -20,7 +21,7 @@ export default {
 
         const categoria = await categoriasRepository.findOneOrFail( id );
 
-        return res.status(200).json(categoria);
+        return res.status(200).json(CategoriaView.render(categoria));
     },
 
     async create(req: Request, res: Response ){

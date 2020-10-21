@@ -1,5 +1,6 @@
 import { Request, Response } from 'express';
 import { getRepository } from 'typeorm';
+import UsuarioView from '../views/usuarioView';
 
 import Usuario from '../models/usuario';
 
@@ -10,7 +11,7 @@ export default {
 
         const usuarios = await usuarioRepository.find();
 
-        return res.status(200).json(usuarios);
+        return res.status(200).json(UsuarioView.renderMany(usuarios));
     },
 
     async show(req: Request, res: Response){
@@ -21,7 +22,7 @@ export default {
 
         const usuario = await usuarioRepository.findOneOrFail(email);
 
-        return res.status(200).json(usuario);
+        return res.status(200).json(UsuarioView.render(usuario));
     },
 
     async create(req: Request, res: Response){

@@ -24,6 +24,6 @@ routes.post("/categorias", upload.array('imagens'), CategoriaController.create);
 
 routes.get("/produtos", ProdutoController.index);
 routes.get("/produtos/:id", ProdutoController.show);
-routes.post("/produtos", ProdutoController.create);
+routes.post("/produtos", upload.array('imagens'), ProdutoController.create);
 
 export default routes;
