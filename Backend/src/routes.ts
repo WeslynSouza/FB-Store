@@ -27,6 +27,8 @@ routes.get("/produtos", ProdutoController.index);
 routes.get("/produtos/:id", ProdutoController.show);
 routes.post("/produtos", upload.array('imagens'), ProdutoController.create);
 
+routes.get("/pedidos", PedidoController.index);
+routes.get("/pedidos/:id", PedidoController.show);
 routes.post("/pedidos", PedidoController.create);
 
 export default routes;

@@ -4,6 +4,28 @@ import Pedido from '../models/pedido';
 import Usuario from '../models/usuario';
 
 export default {
+
+    async index(req: Request, res: Response) {
+
+        const pedidoRepository = getRepository(Pedido);
+
+        const pedidos = await pedidoRepository.find();
+
+        return res.status(200).json(pedidos);
+    },
+
+    async show(req: Request, res: Response) {
+
+        const { id } = req.params;
+
+        const pedidoRepository = getRepository(Pedido);
+
+        const pedido = await pedidoRepository.findOneOrFail( id );
+
+        return res.status(200).json(pedido);
+        
+    },
+
     async create(req: Request, res: Response){
 
         const {
@@ -24,7 +46,7 @@ export default {
             valorTotal,
             statusCompra,
             codigoRastreio,
-            usuario
+            usuario,
         }
 
         const pedido = pedidoRepository.create(requestData);

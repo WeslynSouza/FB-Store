@@ -1,4 +1,5 @@
-import { Column, Entity, JoinColumn, ManyToOne, PrimaryGeneratedColumn } from 'typeorm';
+import { Column, Entity, JoinColumn, ManyToOne, OneToMany, PrimaryGeneratedColumn } from 'typeorm';
+import ItemPedido from './itemPedido';
 import Usuario from './usuario';
 
 @Entity('Pedido')
@@ -22,4 +23,10 @@ export default class Pedido {
     @ManyToOne(() => Usuario, usuario => usuario.pedidos)
     @JoinColumn({ name: 'emailUsuario'})
     usuario: Usuario;
+
+    @OneToMany(() => ItemPedido, itemPedido => itemPedido.pedido, {
+        cascade: ['insert', 'update', 'remove']
+    })
+    @JoinColumn({ name: 'codigoPedido' })
+    itens: ItemPedido[];
 }

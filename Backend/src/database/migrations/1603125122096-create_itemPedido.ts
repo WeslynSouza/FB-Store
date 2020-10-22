@@ -7,6 +7,14 @@ export class createItemPedido1603125122096 implements MigrationInterface {
             name: 'itemPedido',
             columns: [
                 {
+                    name: 'id',
+                    type: 'integer',
+                    unsigned: true,
+                    isPrimary: true,
+                    isGenerated: true,
+                    generationStrategy: 'increment'
+                },
+                {
                     name: 'codigoPedido',
                     type: 'integer',
                 },

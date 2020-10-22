@@ -2,6 +2,7 @@ import { Column, Entity, JoinColumn, ManyToOne, OneToMany, PrimaryGeneratedColum
 
 import Categoria from './categoria';
 import Imagem from './imagem';
+import ItemPedido from './itemPedido';
 
 @Entity('Produto')
 export default class Produto{
@@ -27,4 +28,10 @@ export default class Produto{
     @ManyToOne(() => Categoria, Categoria => Categoria.produtos)
     @JoinColumn({ name: 'idCategoria'})
     categoria: Categoria;
+
+    @OneToMany(() => ItemPedido, itemPedido => itemPedido.produto, {
+        cascade: ['update', 'remove']
+    })
+    @JoinColumn({ name: 'idProduto' })
+    itensPedido: ItemPedido[];
 }
