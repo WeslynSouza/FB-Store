@@ -1,6 +1,7 @@
 import { Request, Response } from 'express';
 import { getRepository } from 'typeorm';
 import UsuarioView from '../views/usuarioView';
+import * as yup from 'yup';
 
 import Usuario from '../models/usuario';
 
@@ -47,6 +48,17 @@ export default {
             cel,
             senha,
         }
+
+        const schema = yup.object().shape({
+            email: yup.string().email().required(),
+            nome: yup.string().required(),
+            cel: yup.number().required(),
+            senha: yup.string().required().max(20)
+        });
+
+        await schema.validate(data, {
+            abortEarly: false,
+        })
 
         const usuario = usuarioRepository.create(data);
 

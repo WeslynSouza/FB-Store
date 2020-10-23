@@ -31,21 +31,21 @@ class Home extends Component{
                                 img={btsBanner}
                                 alt="Coleção bts"
                                 titulo="BTS Map Of The Soul 7"
-                                href="/BtsStore"               
+                                href="/"               
                             />
         
                             <ColeçãoContainer 
                                 img={mxBanner}
                                 alt="Coleção Monsta X"
                                 titulo="Yeah! We Rock The Show"
-                                href="/MxStore"               
+                                href="/"               
                             />
         
                             <ColeçãoContainer 
                                 img={bpBanner}
                                 alt="Coleção BlackPink"
                                 titulo="How You Like That"
-                                href="/BpStore"                 
+                                href="/"                 
                             />
                         </div>
                     </div>
