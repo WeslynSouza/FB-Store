@@ -19,18 +19,21 @@
 }
 
 .camisa-titulo {
-    font-size: 2.6rem;  
+    font-size: 2.4rem;  
+    font-weight: 500;
     margin-bottom: .7rem;
 }
 
 .camisa-preco {
     color: var(--color-red-primary);
     font-size: 2rem;  
+    font-weight: 500;
     margin-bottom: 1.8rem;
 }
 
 .detalhes-titulo {
-    font-size: 1.8rem;  
+    font-size: 2rem;  
+    font-weight: 500;
     margin-bottom: 2.4rem;
     text-align: center;
 }
@@ -47,13 +50,13 @@
     margin-bottom: 2.2rem;
     border: .1px #fff solid;
     border-bottom: 3px var(--color-red-primary) solid;
-    font-weight: 700;
+    font-weight: 500;
     font-size: 1.8rem;
     box-shadow: 0px -3px 6px 1px rgba(0, 0, 0, 0.13);
 }
 
 .camisa-infos select:last-child{
-    margin: 0 auto 2.2rem;
+    width: 100%;
 }
 
 .camisa-infos select option:first {
@@ -76,4 +79,23 @@
     font-weight: 700;
     text-transform: uppercase;
     box-shadow: 0px 3px 6px 1px rgba(0, 0, 0, 0.13);
+}
+
+.camisa-carousel-container {
+    width: 95%;
+    margin-left: 2.5%;
+    margin-top: 2rem;
+}
+
+.camisa-carousel-container h2 {
+    font-size: 2.4rem;
+    font-weight: 500;
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.camisa-carousel {
+    width: 100%;
+    margin-top: 2rem;
 }

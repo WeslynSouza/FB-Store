@@ -43,46 +43,54 @@ class Details extends Component {
                 <Menu color={this.menu}/>
                     <div className='camisa-detalhes-container'>
                         
-                    {this.imageOuSlide()}
-                    
-                    <div className='camisa-detalhes-box' style={{background: this.caixa}}>
+                        {this.imageOuSlide()}
                         
-                        <h1 className='camisa-titulo'>{this.props.camisa.titulo}</h1>
-                        <h2 className='camisa-preco'>{this.props.camisa.preço}</h2>
+                        <div className='camisa-detalhes-box' style={{background: this.caixa}}>
+                            
+                            <h1 className='camisa-titulo'>{this.props.camisa.titulo}</h1>
+                            <h2 className='camisa-preco'>R$ {this.props.camisa.preço}</h2>
 
-                        <h3 className='detalhes-titulo'>Detalhes</h3>
+                            <h3 className='detalhes-titulo'>Detalhes</h3>
 
-                        <div className="camisa-infos">
-                            <select name="tamanho" id="tamanho">
-                                <option value="">Tamanho</option>
-                                <option value="pp">PP</option>
-                                <option value="p">P</option>
-                                <option value="m">M</option>
-                                <option value="p">G</option>
-                                <option value="p">GG</option>
-                            </select>
+                            <div className="camisa-infos">
+                                <select name="tamanho" id="tamanho">
+                                    <option value="">Tamanho</option>
+                                    <option value="pp">PP</option>
+                                    <option value="p">P</option>
+                                    <option value="m">M</option>
+                                    <option value="p">G</option>
+                                    <option value="p">GG</option>
+                                </select>
 
-                            <select name="quantidade" id="quantidade">
-                                <option value="">Quantidade</option>
-                                <option value="1">1</option>
-                                <option value="2">2</option>
-                                <option value="3">3</option>
-                                <option value="4">4</option>
-                                <option value="5">5</option>
-                            </select>
+                                <select name="quantidade" id="quantidade">
+                                    <option value="">Quantidade</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                </select>
 
-                            <select name="cor" id="cor">
-                                <option value="">Cor</option>
-                                <option value="branco">Branco</option>
-                                <option value="preto">Preto</option>
-                            </select>
+                                <select name="cor" id="cor">
+                                    <option value="">Cor</option>
+                                    <option value="branco">Branco</option>
+                                    <option value="preto">Preto</option>
+                                </select>
+                            </div>
+
                         </div>
 
-                    </div>
+                        <button className='camisa-detalhes-button'>
+                            comprar
+                        </button>
 
-                    <button className='camisa-detalhes-button'>
-                        comprar
-                    </button>
+                        <div className="camisa-carousel-container">
+                            <h2>Camisas que você pode gostar</h2>
+                            <div className="camisa-carousel">
+
+                            </div>
+                        </div>
+
                     </div>
                 <Rodape color={this.rodape}/>
             </div>

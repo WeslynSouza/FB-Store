@@ -26,7 +26,16 @@ class Home extends Component{
                             <SlideItem img={bpBanner} alt='Bp'/>
                         </Slide>
 
+                        <div className="menu-carousel">
+                            <button>Kpop</button>
+                            <button>Jogos</button>
+                            <button>Animes</button>
+                        </div>
+
                         <div className="colecoes">
+
+                            <h1 className='colecoes-titulo'>Confira as nossas coleções</h1>
+
                             <ColeçãoContainer 
                                 img={btsBanner}
                                 alt="Coleção bts"
