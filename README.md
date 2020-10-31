@@ -33,6 +33,10 @@ Para acessar o layout utilize a ferramenta [figma](https://www.figma.com/file/N8
 
 ```sh
 git clone hhttps://github.com/WeslynSouza/FB-Store
+cd backend
+npm install
+npm run dev
+cd ../frontend
 npm install
 npm start
 ```
