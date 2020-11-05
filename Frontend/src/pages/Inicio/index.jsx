@@ -69,6 +69,7 @@ class Home extends Component{
                             <button>Kpop</button>
                             <button>Jogos</button>
                             <button>Animes</button>
+                            <button>Filmes/Séries</button>
                         </div>
 
                         <div className="colecoes">
